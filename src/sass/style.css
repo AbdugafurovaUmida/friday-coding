@@ -401,7 +401,7 @@ ul {
   box-sizing: border-box;
 }
 
-.navigation__link, .footer-navigation__links a, .logo-path, .button {
+.strategy, .navigation__link, .footer-navigation__links a, .logo-path, .button {
   transition: all 0.3s ease-out;
 }
 
@@ -638,14 +638,14 @@ h5 {
 
 .ico_phone {
   background-image: url("../img/icons/phone.svg");
-  width: 13px;
-  height: 13px;
+  width: 25px;
+  height: 25px;
 }
 
 .ico_letter {
   background-image: url("../img/icons/letter.svg");
-  width: 11px;
-  height: 8px;
+  width: 25px;
+  height: 25px;
 }
 
 .tags {
@@ -1174,8 +1174,9 @@ h5 {
   }
 }
 
-.strategy-wrapper > * {
-  margin-bottom: 30px;
+.strategy-wrapper {
+  justify-content: flex-start;
+  gap: 30px;
 }
 @media (max-width: 768px) {
   .strategy-wrapper > * {
@@ -1203,18 +1204,20 @@ h5 {
     padding-top: 200px;
   }
 }
+.strategy__name {
+  margin: 0 0 29px;
+  text-align: left;
+  flex-grow: 1;
+}
+.strategy:hover .strategy__name {
+  color: #FF9900;
+}
 
 .strategy__content {
   padding: 24px 33px 26px;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-}
-
-.strategy__name {
-  margin: 0 0 29px;
-  text-align: left;
-  flex-grow: 1;
 }
 
 @media (max-width: 768px) {
@@ -1260,13 +1263,24 @@ h5 {
 
 .employee-container {
   padding-right: 32px;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+.employee-container::after {
+  display: none;
+}
+@media (max-width: 768px) {
+  .employee-container {
+    justify-content: center;
+  }
 }
 
 .employee {
   display: flex;
   padding: 35px;
   position: relative;
-  width: calc(30% - 32px);
+  min-width: 345px;
+  width: 100%;
 }
 
 .employee__name {
@@ -1300,5 +1314,4 @@ h5 {
   position: absolute;
   right: -32px;
   top: 20px;
-  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
 }/*# sourceMappingURL=style.css.map */

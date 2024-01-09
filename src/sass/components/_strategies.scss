@@ -1,3 +1,4 @@
+
 .strategies {
     padding: 30px 0;
     @include media-tablet {
@@ -22,8 +23,10 @@
 
 //Strategy
 .strategy-wrapper {
-    >* {
-        margin-bottom: 30px;
+    justify-content: flex-start;
+    gap: 30px;
+    > * {
+        // margin-bottom: 30px;
         @include media-tablet {
             flex-basis: 48%;
         }
@@ -45,6 +48,15 @@
         overflow: hidden;
         padding-top: 200px;
     }
+    &__name {
+        margin: 0 0 29px;
+        text-align: left;
+        flex-grow: 1;
+    }
+    &:hover &__name {
+        color: $color-primary;
+    }
+    @extend %transition;
 }
 
 .strategy__content {
@@ -52,12 +64,6 @@
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-}
-
-.strategy__name {
-    margin: 0 0 29px;
-    text-align: left;
-    flex-grow: 1;
 }
 
 .strategy__image {
@@ -76,7 +82,7 @@
     }
 
     .strategy__date {
-        @include font ($size: 1.3rem, $weight: normal);
+        @include font($size: 1.3rem, $weight: normal);
         margin: 0 0 5px;
     }
 

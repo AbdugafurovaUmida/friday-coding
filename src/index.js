@@ -26,7 +26,47 @@ const data = [
         tags: ['Culture', 'Design', 'Art'],
         content : 'knowing yourself is the first, and a very critical step in the process of planning your future',
         date: '01.01.2020'
-    }
+    },
+           {
+        id: 4,
+        title: "Success Steps For Your Personal Or Business Life Plus Funny Image on the Back",
+        urlToImage: './src/img/strategies/4.jpg',
+        tags: ['Culture', 'Design', 'Art'],
+        content : 'knowing yourself is the first, and a very critical step in the process of planning your future',
+        date: '01.01.2020'
+    },
+              {
+        id: 5,
+        title: "Increasing Prosperity With Positive Thinking",
+        urlToImage: './src/img/strategies/5.jpg',
+        tags: ['Design'],
+        content : 'knowing yourself is the first, and a very critical step in the process of planning your future',
+        date: '01.01.2020'
+    },
+     {
+        id: 6,
+        title: "Increasing Prosperity With Positive Thinking",
+        urlToImage: './src/img/strategies/1.jpg',
+        tags: ['Art', 'Design'],
+        content : 'knowing yourself is the first, and a very critical step in the process of planning your future',
+        date: '01.01.2020'
+    },
+        {
+        id: 7,
+        title: "Motivation Is The First Step To Success",
+        urlToImage: './src/img/strategies/2.jpg',
+        tags: ['Culture'],
+        content : 'knowing yourself is the first, and a very critical step in the process of planning your future',
+        date: '01.01.2020'
+    },
+           {
+        id: 8,
+        title: "Success Steps For Your Personal Or Business Life",
+        urlToImage: './src/img/strategies/3.jpg',
+        tags: ['Culture', 'Design', 'Art'],
+        content : 'knowing yourself is the first, and a very critical step in the process of planning your future',
+        date: '01.01.2020'
+    },
 ]
 
 window.onload = function() {

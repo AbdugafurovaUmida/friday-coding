@@ -14,13 +14,23 @@ $image-gap: 32px;
 
 .employee-container {
     padding-right: $image-gap;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    &::after{
+        display: none;
+    }
+    @include media-tablet{
+        justify-content: center;
+    }
 }
 
 .employee {
     display: flex;
     padding: 35px;
     position: relative;
-    width: calc(30% - $image-gap);
+    // width: calc(30% - $image-gap);
+    min-width: 345px;
+    width: 100%;
 }
 
 .employee__name {
@@ -48,5 +58,5 @@ $image-gap: 32px;
     position: absolute;
     right: -$image-gap;
     top: 20px;
-    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
+    // box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
 }
